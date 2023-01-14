@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>Registration Page</title>
+</head>
+<body>
+<section class="vh-100">
+  <div ng-app="registerApp" ng-controller="registerCtrl" class="container">
+  
+    <div class="px-5 ms-xl-6">
+      <div class="px-5 ms-xl-6">
+        <img src="images/logo.png" alt="Logo">
+        <span class="h1 fw-bold mb-0">KACHOW</span>
+      </div>
+
+
+    <div class="card">
+      <div class="card-header text-white bg-dark mb-3" style="text-align: center; font-weight: bolder;">Register</div>
+      <div class="card-body">
+
+        <form>
+          <div class="form-group">
+            <label for="inputUsername">Username:</label>
+            <input type="text" class="form-control" id="inputUsername" placeholder="Enter username" ng-model="user.username">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" ng-model="user.email">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password:</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Enter password" ng-model="user.password">
+          </div>
+          <div class="form-group">
+            <label for="inputConfirmPassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm password" ng-model="user.confirmPassword">
+          </div>
+          <button type="submit" class="btn btn-default" ng-click="submit()">Register</button>
+          <a href="login.html" class="btn btn-link">Have an account? Login</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Made by: Ron Russelle L Bangsil | Bobby Marcko L. Cruz | Calvin Kent R. Pamandanan of BSIT-3A</p>
+</footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
